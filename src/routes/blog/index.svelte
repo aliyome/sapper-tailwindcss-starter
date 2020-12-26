@@ -1,4 +1,4 @@
-<script context="module">
+<script context="module" lang="ts">
   export function preload() {
     return this.fetch(`blog.json`)
       .then((r) => r.json())
@@ -8,8 +8,8 @@
   }
 </script>
 
-<script>
-  export let posts;
+<script lang="ts">
+  export let posts: { slug: string; title: string; html: any }[];
 </script>
 
 <style>
