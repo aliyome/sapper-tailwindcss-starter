@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
+    "build": "sapper build",
+    "export": "sapper export",
     "start": "node __sapper__/build",
     "format:all": "prettier --write **/*.{js,ts,json}",
     "validate": "svelte-check --ignore src/node_modules/@sapper"
