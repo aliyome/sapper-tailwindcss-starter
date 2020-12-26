@@ -32,7 +32,15 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode),
       }),
       svelte({
-        preprocess: sveltePreprocess(),
+        preprocess: sveltePreprocess({
+          sourceMap: dev,
+          postcss: {
+            plugins: [
+              require('tailwindcss'),
+              require('autoprefixer')
+            ]
+          }
+        }),
         compilerOptions: {
           dev,
           hydratable: true,

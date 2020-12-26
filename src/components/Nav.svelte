@@ -48,7 +48,7 @@
   }
 </style>
 
-<nav>
+<nav class="bg-green-600 px-4 text-white">
   <ul>
     <li>
       <a

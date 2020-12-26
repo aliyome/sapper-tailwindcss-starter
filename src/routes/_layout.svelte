@@ -4,19 +4,15 @@
   export let segment: string;
 </script>
 
-<style>
-  main {
-    position: relative;
-    max-width: 56em;
-    background-color: white;
-    padding: 2em;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
+<style global lang="postcss">
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 </style>
 
 <Nav segment="{segment}" />
 
-<main>
+<main class="grid mx-auto max-w-screen-xl p-6 text-gray-800">
   <slot />
 </main>
