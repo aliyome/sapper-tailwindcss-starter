@@ -60,6 +60,9 @@
     "*.{js,ts,svelte,html,css}": [
       "prettier --write",
       "git add"
+    ],
+    "*.svelte": [
+      "svelte-check"
     ]
   }
 }
